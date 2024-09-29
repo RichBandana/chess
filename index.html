@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play-to-Earn Chess Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <button id="connectWallet">Connect MetaMask</button>
+<div id="walletAddress">Wallet Address: 0x5861Ca2BE5D0ea532e0300FA1447Ce89A401F8c4</div>
+        <h1>Online Chess Game</h1>
+        <div class="player-info">
+            <div id="player1" class="player">
+                <h2>Player 1</h2>
+                <input type="text" id="player1Name" placeholder="Enter Player 1 Name" />
+                <p>Bitcoin: <span id="wallet1"></span></p>
+                <p>Score: <span id="score1">0</span></p>
+            </div>
+            <div id="player2" class="player">
+                <h2>Player 2</h2>
+                <input type="text" id="player2Name" placeholder="Enter Player 2 Name" />
+                <p>Bitcoin: <span id="wallet2"></span></p>
+                <p>Score: <span id="score2">0</span></p>
+            </div>
+        </div>
+        <button id="reset">Reset Game</button>
+        <div id="turn">Your Turn</div>
+        <div id="chessboard" class="chessboard"></div>
+        <div id="message"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="script.js"></script>
+    <script src="instructions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+ 
+</body>
+</html>
